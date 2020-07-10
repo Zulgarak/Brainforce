@@ -1,0 +1,14 @@
+//variables
+$red: #ED1B24;
+$black: #060402;
+$grey: #929292;
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 5;
+$m-w: 1275px;
+$s-w: 765px;
+
+//mixins
+@mixin normal-text {
+    font-size: 14px;
+    line-height: 21px;
+}

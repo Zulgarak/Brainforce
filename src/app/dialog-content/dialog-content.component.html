@@ -1,0 +1,33 @@
+<h2>Contact our sales service</h2>
+<form [formGroup]="form" (ngSubmit)="submit(form)">
+  <mat-form-field appearance="outline">
+        <mat-label>Your Name</mat-label>
+        <input matInput
+               placeholder="Enter you name"
+               formControlName="name">
+        <mat-error *ngIf="form.controls.name.hasError('required')">This field is required</mat-error>
+      </mat-form-field>
+  <mat-form-field appearance="outline">
+        <mat-label>Your email</mat-label>
+        <input matInput
+               placeholder="pat@example.com"
+               formControlName="email"
+               type="email">
+        <mat-error *ngIf="form.controls.email.hasError('required')">This field is required</mat-error>
+        <mat-error *ngIf="form.controls.email.hasError('email')">Enter the correct email</mat-error>
+
+      </mat-form-field>
+  <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>Your Phone</mat-label>
+        <input matInput
+               formControlName="phone"
+               type="tel"
+               [imask]="{
+               mask: '+{1} (000) 000-00-00',
+               lazy: false,
+               placeholderChar: '_'}">
+        <mat-error *ngIf="form.controls.phone.hasError('required')">This field is required</mat-error>
+        <mat-error *ngIf="form.controls.phone.hasError('pattern')">Enter the correct phone</mat-error>
+      </mat-form-field>
+  <input [disabled]="form.invalid" class="input-submit" type="submit" value="SendData">
+</form>
