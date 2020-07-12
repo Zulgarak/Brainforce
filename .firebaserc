@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "brainforce-92af2": {
+      "hosting": {
+        "brainforce": [
+          "brainforce-92af2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "brainforce-92af2"
+  }
+}

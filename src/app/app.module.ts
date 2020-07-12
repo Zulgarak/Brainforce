@@ -14,6 +14,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { IMaskModule } from 'angular-imask';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { BUCKET } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -34,8 +37,11 @@ import { IMaskModule } from 'angular-imask';
     MatInputModule,
     MatCardModule,
     IMaskModule,
+    AngularFireModule.initializeApp(environment.firebase)
 ],
-  providers: [],
+  providers: [
+    { provide: BUCKET, useValue: 'gs://brainforce-92af2.appspot.com' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

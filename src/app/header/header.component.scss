@@ -8,7 +8,7 @@
   justify-content: space-between;
   padding: 21px 10px;
   z-index: 2;
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     padding: 8px 10px;
   }
 }
@@ -21,14 +21,14 @@
   z-index: 2;
   & .burger-container {
     display: none;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       display: block;
     }
   }
   &-nav {
     display: flex;
     @include normal-text;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       display: none;
     }
     &_item {
@@ -84,7 +84,7 @@ ul.menu {
 }
 // Animation for dropdown menu
 :host {
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     .header {
       position: fixed;
       display: block;

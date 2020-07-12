@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding: 21px 10px;
   z-index: 2;
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     padding: 13px 10px;
   }
 }
@@ -22,7 +22,7 @@
   background: no-repeat center/cover url(../assets/img/banner.png);
   //maybe background need parallax or fixed, but I don't like them
   //background-attachment: fixed;
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     text-align: center;
     height: 100vh;
   }
@@ -35,7 +35,7 @@
     line-height: 105px;
     font-weight: normal;
     white-space: nowrap;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 32px;
       line-height: 100%;
     }
@@ -44,7 +44,7 @@
     font-size: 24px;
     line-height: 36px;
     color: $grey;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 18px;
       line-height: 27px;
     }
@@ -79,7 +79,7 @@
       height: 206px;
       background-image: url(../assets/img/element-dots.png);
       transform: rotate(180deg);
-      @media only screen and (max-width: 1275px) {
+      @media only screen and (max-width: $m-w) {
         display: none;
       }
     }
@@ -92,7 +92,7 @@
       width: 162px;
       height: 206px;
       background-image: url(../assets/img/element-dots.png);
-      @media only screen and (max-width: 1275px) {
+      @media only screen and (max-width: $m-w) {
         display: none;
       }
     }
@@ -102,7 +102,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       text-align: center;
     }
     & h3 {
@@ -130,7 +130,7 @@
       font-size: 40px;
       line-height: 100%;
       font-weight: normal;
-      @media only screen and (max-width: 765px) {
+      @media only screen and (max-width: $s-w) {
         font-size: 32px;
         line-height: 100%;
       }
@@ -140,7 +140,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media only screen and (max-width: 1275px) {
+    @media only screen and (max-width: $m-w) {
       justify-content: space-around;
     }
     &-item {
@@ -197,13 +197,13 @@
   height: 726px;
   background:  no-repeat center/cover url(../assets/img/background-section-messages.png) ;
   overflow: hidden;
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     text-align: center;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   }
   & .separator {
     &:after {
-      @media only screen and (max-width: 765px) {
+      @media only screen and (max-width: $s-w) {
         display: none;
       }
     }
@@ -215,12 +215,12 @@
    position: absolute;
    top: 76px;
    right: 300px;
-   @media only screen and (max-width: 1275px) {
+   @media only screen and (max-width: $m-w) {
      top: 76px;
      right: 100px;
      z-index: -1;
    }
-   @media only screen and (max-width: 765px) {
+   @media only screen and (max-width: $s-w) {
      top: 76px;
      right: 50%;
      z-index: -1;
@@ -231,7 +231,7 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 100%;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 32px;
       line-height: 100%;
     }
@@ -241,7 +241,7 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 18px;
       line-height: 140%;
     }
@@ -284,21 +284,21 @@
   padding-top: 20px;
   & .separator {
     &:after {
-      @media only screen and (max-width: 765px) {
+      @media only screen and (max-width: $s-w) {
         display: none;
       }
     }
   }
-  @media only screen and (max-width: 1275px) {
+  @media only screen and (max-width: $m-w) {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   }
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: $s-w) {
     text-align: center;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   }
   & .container {
     position: relative;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       height: 100%;
     }
   }
@@ -306,10 +306,10 @@
     position: absolute;
     top: -20px;
     right: 25px;
-    @media only screen and (max-width: 1275px) {
+    @media only screen and (max-width: $m-w) {
       z-index: -1;
     }
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       width: 180px;
       right: 50%;
       top: 50%;
@@ -319,7 +319,7 @@
     &:nth-of-type(1) {
       top: 25px;
       right: 80px;
-      @media only screen and (max-width: 765px) {
+      @media only screen and (max-width: $s-w) {
         right: 50%;
         top: 50%;
         transform: translate(50%, -50%);
@@ -331,7 +331,7 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 100%;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 32px;
       line-height: 100%;
     }
@@ -342,7 +342,7 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: $s-w) {
       font-size: 18px;
       line-height: 140%;
     }
